@@ -1,0 +1,17 @@
+﻿#!/usr/bin/python
+
+import json
+import random
+
+with open ('/usr/bin/data.json', 'r') as fh:
+data = fh.read()
+data_value = json.loads(data)
+
+for x in range(1):
+user = raw_input("\n""Whats your all thoughts you have and what things you want to achive: ")
+ron = random.randint(1,40)
+print "-------------------------------------------"
+print data_value["quotes"][ron]
+print "-------------------------------------------"
+
+
